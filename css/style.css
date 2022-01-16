@@ -537,9 +537,121 @@ button[type="submit"] {
 
 
 /*==============================================
-                End Hero
+                Start Skills
 ===============================================*/
+#skill{
+    background-color: #f7f7f7
+}
 
+.u-center {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  /*height: 100%;*/
+}
+
+.skills {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  margin: 1em 0;
+  position: relative;
+  width: 22.5em;
+}
+
+.skill_heading{
+    font-size: 18px; 
+    font-weight: 500;
+}
+
+.skill__type {
+  color: #000;
+  font-size: 0.85rem;
+  letter-spacing: 0.145em;
+  text-transform: uppercase;
+  /*width: 1em;*/
+}
+.skill__outer-bar, .skill__inner-bar {
+  height: 0.75em;
+}
+.skill__outer-bar {
+  background: #33333330;
+}
+.skill__inner-bar {
+  -webkit-animation: fillBar 1s forwards;
+          animation: fillBar 1s forwards;
+  background: #007bff;
+  left: 5em;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+.skill__inner-bar--100 {
+  width: 100%;
+}
+.skill__inner-bar--90 {
+  width: 90%;
+}
+.skill__inner-bar--95 {
+  width: 95%;
+}
+.skill__inner-bar--85 {
+  width: 85%;
+}
+.skill__inner-bar--80 {
+  width: 80%;
+}
+.skill__inner-bar--75 {
+  width: 75%;
+}
+.skill__inner-bar--70 {
+  width: 70%;
+}
+.skill__inner-bar--60 {
+  width: 60%;
+}
+.skill__inner-bar--65 {
+  width: 65%;
+}
+.skill__inner-bar--55 {
+  width: 55%;
+}
+.skill__inner-bar--50 {
+  width: 50%;
+}
+.skill__inner-bar--45 {
+  width: 45%;
+}
+.skill__inner-bar--40 {
+  width: 40%;
+}
+.skill__inner-bar--35 {
+  width: 35%;
+}
+.skill__inner-bar--30 {
+  width: 30%;
+}
+.skill__inner-bar--20 {
+  width: 20%;
+}
+.skill__inner-bar--10 {
+  width: 10%;
+}
+
+
+@-webkit-keyframes fillBar {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fillBar {
+  to {
+    transform: scaleX(1);
+  }
+}
 
 /*==============================================
                 Start About
@@ -665,7 +777,7 @@ button[type="submit"] {
                 Start Education
 ==============================================*/
 #education{
-  background-color: #f5f5f5;
+  background-color: #f7f7f7;
   padding: 55px 0px 40px 0px;
 }
 .edu-title{
@@ -1148,10 +1260,18 @@ textarea {
     background-color: #3b5998;
 }
 
+#footer .back-to-top:hover {
+    background-color: #007bff; 
+}
+
+#footer .back-to-top a:hover {
+    color: #fff; 
+}
+
 #footer .back-to-top {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
     background-color: #fff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1159,10 +1279,10 @@ textarea {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     position: fixed;
     right: -55%;
-    bottom: 10%;
+    bottom: 5%;
     box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.3);
     transition: .5s;
     -webkit-transition: .5s;

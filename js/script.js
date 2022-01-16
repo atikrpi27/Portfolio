@@ -125,7 +125,7 @@ $(function() {
     $(window).on("scroll", function() {
         var scroll = $(window).scrollTop();
         if (scroll > 50) {
-            $(".back-to-top").css("right", "3%", "opacity", "1");
+            $(".back-to-top").css("right", "2%", "opacity", "1");
         } else {
             $(".back-to-top").css("right", "-40%", "opacity", "0");
         }
