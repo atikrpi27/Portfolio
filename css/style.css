@@ -1,6 +1,4 @@
-*,
-*:after,
-*:before {
+*,*:after,*:before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -61,13 +59,7 @@ body {
     color: #007BFF;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -105,8 +97,7 @@ p {
     text-align: center;
 }
 
-ul,
-li {
+ul,li {
     list-style: none;
 }
 
@@ -255,7 +246,6 @@ a:hover {
 button[type="submit"] {
     border: 1px solid #007BFF;
 }
-
 
 
 /*==============================================
@@ -740,12 +730,27 @@ button[type="submit"] {
 #services .services-item {
     float: left;
     width: calc(100% / 3 - 20px);
+    transition: transform .3s;
     padding: 40px 20px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
     background-color: #fff;
+    height: 270px;
     box-shadow: 0 5px 9px 0px rgba(0, 0, 0, 0.2);
+}
+
+#services .services-item:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 9px 0px rgb(0 0 0 / 40%);
+}
+
+.services-item i{
+    transition:1.5s;
+}
+
+#services .services-item i:hover{
+    transform:rotate(360deg);
 }
 
 #services .services-item .item-title {
@@ -944,142 +949,6 @@ button[type="submit"] {
 }
 
 
-/*==============================================
-                End Portfolio
-===============================================*/
-
-
-/*==============================================
-                Start Testimonials
-===============================================*/
-
-#testimonials .section-heading {
-    padding: 80px 0 0 0;
-    color: #fff;
-}
-
-#testimonials .testimonials-content {
-    padding: 100px 0 30px 0;
-}
-
-#testimonials .testimonials-content .icon {
-    font-size: 44px;
-    color: #007BFF;
-}
-
-#testimonials .testimonials-content .testimonial-desc {
-    margin: 20px 0 20px 0;
-    width: 60%;
-    margin: 40px auto;
-    color: #fff;
-}
-
-#testimonials .testimonials-content .testimonial-pic {
-    width: 6%;
-    margin: 0 auto 30px auto;
-}
-
-#testimonials .testimonials-content .testimonial-pic img {
-    display: block;
-    max-width: 100%;
-    border: 2px solid #999;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-#testimonials .testimonials-content .testimonial-profile span {
-    display: block;
-    color: #fff;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-}
-
-#testimonials .testimonials-content .testimonial-profile span.name {
-    font-weight: 700;
-}
-
-.owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 30px;
-}
-
-.owl-theme .owl-dots .owl-dot {
-    outline: none;
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #007BFF;
-}
-
-
-/*==============================================
-                End Testimonials
-===============================================*/
-
-
-/*==============================================
-                Start Blog
-===============================================*/
-
-#blog .blog-wrapper .blog {
-    width: calc(100% / 3 - 20px);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-}
-
-#blog .blog-wrapper .blog .blog-img img {
-    display: block;
-    max-width: 100%;
-}
-
-#blog .blog-wrapper .blog .blog-content {
-    margin: 20px 0 0 0;
-}
-
-#blog .blog-wrapper .blog .blog-content .title {
-    font-size: 16px;
-    color: #333333;
-    margin: 0 0 20px 0;
-}
-
-#blog .blog-wrapper .blog .blog-content .desc {
-    margin: 0 0 20px 0;
-}
-
-#blog .blog-wrapper .blog .blog-content .blog-author .author-img {
-    width: 12%;
-    margin: 0 20px 0 0;
-}
-
-#blog .blog-wrapper .blog .blog-content .blog-author img {
-    display: block;
-    max-width: 100%;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-#blog .blog-wrapper .blog .blog-content .blog-author .author-text span {
-    display: block;
-}
-
-#blog .blog-wrapper .blog .blog-content .blog-author .author-text span.name {
-    font-weight: 600;
-    color: #007BFF;
-    margin: 0 0 5px 0;
-}
-
-
-/*==============================================
-                End Blog
-===============================================*/
-
 
 /*==============================================
                 Start Contact
@@ -1163,10 +1032,6 @@ textarea {
     position: relative;
 }
 
-#contact .contact-info ul.contact-details .contact-text {
-    /*width: 200px;
-    padding: 10px 0;*/
-}
 
 #contact .contact-info ul.contact-details .contact-icon:after {
     content: '';
@@ -1209,12 +1074,6 @@ textarea {
 #footer ul .flexi-desc {
     color: #b1b1b1;
 }
-/*
-#footer .footer-bottom {
-    margin: 20px 0 0 0;
-    border-top: 4px solid #292929;
-    padding: 30px 0 30px 0;
-}*/
 
 #footer .footer-bottom .copyright {
     color: #000;
