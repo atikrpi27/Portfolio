@@ -946,6 +946,7 @@ button[type="submit"] {
 #portfolio .portfolio-content .portfolio-items .item img {
     display: block;
     max-width: 100%;
+    height: 230px;
 }
 
 
