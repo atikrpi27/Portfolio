@@ -90,7 +90,7 @@ h4 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 14px;
     color: #4b4b4b;
     line-height: 26px;
     letter-spacing: 1px;
@@ -1292,6 +1292,11 @@ textarea {
     #blog .blog-wrapper .blog {
         width: calc(100% / 2 - 20px);
     }
+
+    .section-subtitle{
+      text-align: justify;
+    }
+
     #testimonials .testimonials-content .testimonial-desc,
     #contact .contact-content .message,
     #contact .contact-content .contact-info {
